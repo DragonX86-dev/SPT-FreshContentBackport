@@ -1,0 +1,18 @@
+{
+  "name": "SPT-FreshContentBackport",
+  "version": "1.0.0",
+  "description": "A mod aimed at adding content to SPT 3.11 that can be transferred painlessly from the latest EFT updates.",
+  "main": "src/mod.js",
+  "license": "MIT",
+  "author": "DragonX86",
+  "sptVersion": "^3.11.x",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "tsyringe": "4.8.0"
+  }
+}
