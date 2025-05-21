@@ -6,12 +6,14 @@ import {IPostSptLoadMod} from "@spt/models/external/IPostSptLoadMod";
 
 import JaegerTrader from "./traders/JaegerTrader";
 import {ItemCreater} from "./items/ItemCreater";
+import {QuestEditor} from "./quests/QuestEditor";
 
 
 class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
     public postDBLoad(container: DependencyContainer): void {
         const itemCreater = new ItemCreater();
         const jaegerTrader = new JaegerTrader();
+        const grenadierQuest = new QuestEditor("5c0d190cd09282029f5390d8");
 
         const f1WithReducedDelayId = itemCreater.create_item_from_clone({
             itemId: "67b49e7335dec48e3e05e057",
@@ -47,6 +49,16 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
                 }
             ]
         )
+
+        grenadierQuest.edit_quest_counter_creator_condition(
+            "AvailableForFinish",
+            0,
+            0,
+            "weapon",
+            (field: string[]) => {
+                field.push(f1WithReducedDelayId);
+            }
+        );
     }
 
     public postSptLoad(container: DependencyContainer): void {
