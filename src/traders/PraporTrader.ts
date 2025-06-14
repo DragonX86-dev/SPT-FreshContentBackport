@@ -1,22 +1,21 @@
-import {container} from "tsyringe";
-
-import {DatabaseServer} from "@spt/servers/DatabaseServer";
-import {IBarterScheme, ITrader} from "@spt/models/eft/common/tables/ITrader";
+import { IUpd } from "@spt/models/eft/common/tables/IItem";
+import { ITrader, IBarterScheme } from "@spt/models/eft/common/tables/ITrader";
 import IEditableTrader from "./IEditableTrader";
-import {IUpd} from "@spt/models/eft/common/tables/IItem";
+import {container} from "tsyringe";
+import {DatabaseServer} from "@spt/servers/DatabaseServer";
 
-export default class JaegerTrader implements IEditableTrader {
-    readonly trader: ITrader;
+export default class PraporTrader implements IEditableTrader {
+    trader: ITrader;
 
     constructor() {
         this.trader = container
             .resolve<DatabaseServer>("DatabaseServer")
             .getTables()
-            // Jaeger TraderId = 5c0647fdd443bc2504c2d371
-            .traders["5c0647fdd443bc2504c2d371"];
+            // Prapor TraderId = 54cb50c76803fa8b248b4571
+            .traders["54cb50c76803fa8b248b4571"];
     }
 
-    public add_item(itemId: string, templateId: string, loyaltyLevel: number, upd: IUpd, barterScheme: IBarterScheme[]): void {
+    add_item(itemId: string, templateId: string, loyaltyLevel: number, upd: IUpd, barterScheme: IBarterScheme[]): void {
         this.trader.assort.items.push({
             "_id": itemId,
             "_tpl": templateId,

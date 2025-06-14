@@ -6,6 +6,7 @@
   "license": "MIT",
   "author": "DragonX86",
   "sptVersion": "^3.11.x",
+  "isBundleMod": true,
   "scripts": {
     "build": "tsc"
   },

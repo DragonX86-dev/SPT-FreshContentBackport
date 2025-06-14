@@ -1,19 +1,19 @@
 import {container} from "tsyringe";
 
-import {DatabaseServer} from "@spt/servers/DatabaseServer";
 import {IBarterScheme, ITrader} from "@spt/models/eft/common/tables/ITrader";
-import IEditableTrader from "./IEditableTrader";
+import {DatabaseServer} from "@spt/servers/DatabaseServer";
 import {IUpd} from "@spt/models/eft/common/tables/IItem";
+import IEditableTrader from "./IEditableTrader";
 
-export default class JaegerTrader implements IEditableTrader {
+export default class TherapistTrader implements IEditableTrader {
     readonly trader: ITrader;
 
     constructor() {
         this.trader = container
             .resolve<DatabaseServer>("DatabaseServer")
             .getTables()
-            // Jaeger TraderId = 5c0647fdd443bc2504c2d371
-            .traders["5c0647fdd443bc2504c2d371"];
+            // Therapist TraderId = 54cb57776803fa99248b456e
+            .traders["54cb57776803fa99248b456e"];
     }
 
     public add_item(itemId: string, templateId: string, loyaltyLevel: number, upd: IUpd, barterScheme: IBarterScheme[]): void {
