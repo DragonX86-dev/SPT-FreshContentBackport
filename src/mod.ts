@@ -6,10 +6,12 @@ import {IPostSptLoadMod} from "@spt/models/external/IPostSptLoadMod";
 
 import {ItemCreater} from "./items/ItemCreater";
 import {QuestEditor} from "./quests/QuestEditor";
-import JaegerTrader from "./traders/JaegerTrader";
-import TherapistTrader from "./traders/TherapistTrader";
-import RefTrader from "./traders/RefTrader";
-import PraporTrader from "./traders/PraporTrader";
+import {HideoutEditor} from "./hideout/HideoutEditor";
+import {IHideoutProduction} from "@spt/models/eft/hideout/IHideoutProduction";
+import TraderEditor from "./traders/TraderEditor";
+import {ITraderItem} from "./interfaces/ITraderItem";
+import {TraderEnum} from "./traders/TraderEnum";
+
 
 class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
     readonly itemCreater: ItemCreater;
@@ -22,10 +24,11 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
         this.add_f1_with_reduced_delay();
         this.add_keys_case();
         this.add_rgo_rgn_vog25_grenades_to_prapor_assort();
+        this.add_new_crafts_to_hideout();
     }
 
     private add_f1_with_reduced_delay() {
-        const jaegerTrader = new JaegerTrader();
+        const jaegerTrader = new TraderEditor(TraderEnum.Jaeger);
         const grenadierQuest = new QuestEditor("5c0d190cd09282029f5390d8");
 
         const f1WithReducedDelayId = this.itemCreater.create_item_from_clone({
@@ -51,21 +54,25 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
             }
         });
 
-        jaegerTrader.add_item(
-            "6812400c0c5cf2cf75075f94",
-            f1WithReducedDelayId,
-            1,
-            {
-                UnlimitedCount: true,
-                StackObjectsCount: 99999
+        jaegerTrader.add_item_to_assortment({
+            item: {
+                _id: "6812400c0c5cf2cf75075f94",
+                _tpl: f1WithReducedDelayId,
+                parentId: "hideout",
+                slotId: "hideout",
+                upd: {
+                    UnlimitedCount: true,
+                    StackObjectsCount: 9999999
+                }
             },
-            [
+            barterScheme: [
                 {
                     "count": 11498,
                     "_tpl": "5449016a4bdc2d6f028b456f"
                 }
-            ]
-        )
+            ],
+            loyaltyLevel: 1
+        });
 
         grenadierQuest.edit_quest_counter_creator_condition(
             "AvailableForFinish",
@@ -79,8 +86,8 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
     }
 
     private add_keys_case() {
-        const therapistTrader = new TherapistTrader();
-        const refTrader = new RefTrader();
+        const refTrader = new TraderEditor(TraderEnum.Ref);
+        const therapistTrader = new TraderEditor(TraderEnum.Therapist);
 
         const keysCaseId = this.itemCreater.create_item_from_clone({
             itemId: "67d3ed3271c17ff82e0a5b0b",
@@ -145,119 +152,97 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
             }
         });
 
-        therapistTrader.add_item(
-            "6808bada364a85cccb04b6fa",
-            keysCaseId,
-            1,
-            {
-                UnlimitedCount: true,
-                StackObjectsCount: 9999999,
-                BuyRestrictionMax: 1,
-                BuyRestrictionCurrent: 0
-            },
-            [
-                {
-                    "count": 2,
-                    "_tpl": "62a09d3bcf4a99369e262447"
-                },
-                {
-                    "count": 2,
-                    "_tpl": "60b0f6c058e0b0481a09ad11"
-                },
-                {
-                    "count": 1,
-                    "_tpl": "5d03794386f77420415576f5"
+        therapistTrader.add_item_to_assortment({
+            item: {
+                _id: "6808bada364a85cccb04b6fa",
+                _tpl: keysCaseId,
+                parentId: "hideout",
+                slotId: "hideout",
+                upd: {
+                    UnlimitedCount: true,
+                    StackObjectsCount: 9999999,
+                    BuyRestrictionMax: 1,
+                    BuyRestrictionCurrent: 0
                 }
-            ]
-        );
-
-        therapistTrader.add_item(
-            "6808bada364a85cccb04b6fd",
-            keysCaseId,
-            2,
-            {
-                UnlimitedCount: true,
-                StackObjectsCount: 9999999,
-                BuyRestrictionMax: 1,
-                BuyRestrictionCurrent: 0
             },
-            [
+            barterScheme: [
+                {
+                    count: 2,
+                    _tpl: "62a09d3bcf4a99369e262447"
+                },
+                {
+                    count: 2,
+                    _tpl: "60b0f6c058e0b0481a09ad11"
+                },
+                {
+                    count: 1,
+                    _tpl: "5d03794386f77420415576f5"
+                }
+            ],
+            loyaltyLevel: 1
+        });
+
+        therapistTrader.add_item_to_assortment({
+            item: {
+                _id: "6808bada364a85cccb04b6fd",
+                _tpl: keysCaseId,
+                parentId: "hideout",
+                slotId: "hideout",
+                upd: {
+                    UnlimitedCount: true,
+                    StackObjectsCount: 9999999,
+                    BuyRestrictionMax: 1,
+                    BuyRestrictionCurrent: 0
+                }
+            },
+            barterScheme: [
                 {
                     "count": 550560,
                     "_tpl": "5449016a4bdc2d6f028b456f"
                 }
-            ]
-        );
+            ],
+            loyaltyLevel: 2
+        });
 
-        refTrader.add_item(
-            "6808b1a7c25caf3a4305d626",
-            keysCaseId,
-            2,
-            {
-                UnlimitedCount: true,
-                StackObjectsCount: 1,
-                BuyRestrictionMax: 1,
-                BuyRestrictionCurrent: 0
+        refTrader.add_item_to_assortment({
+            item: {
+                _id: "6808b1a7c25caf3a4305d626",
+                _tpl: keysCaseId,
+                parentId: "hideout",
+                slotId: "hideout",
+                upd: {
+                    UnlimitedCount: true,
+                    StackObjectsCount: 1,
+                    BuyRestrictionMax: 1,
+                    BuyRestrictionCurrent: 0
+                }
             },
-            [
+            barterScheme: [
                 {
                     "count": 83,
                     "_tpl": "5d235b4d86f7742e017bc88a"
                 }
-            ]
-        );
+            ],
+            loyaltyLevel: 2
+        });
     }
 
     private add_rgo_rgn_vog25_grenades_to_prapor_assort() {
-        const praporTrader = new PraporTrader();
+        const praporTrader = new TraderEditor(TraderEnum.Prapor);
+        const traderItems: ITraderItem[] = require("../db/trader_items.json");
 
-        praporTrader.add_item(
-            "684da564887de8fed00d0a50",
-            "5e340dcdcb6d5863cc5e5efb",
-            1,
-            {
-                UnlimitedCount: true,
-                StackObjectsCount: 9999999
-            },
-            [
-                {
-                    "count": 11271,
-                    "_tpl": "5449016a4bdc2d6f028b456f"
-                }
-            ]
-        );
+        for (const traderItem of traderItems) {
+            praporTrader.add_item_to_assortment(traderItem);
+        }
+    }
 
-        praporTrader.add_item(
-            "684da564887de8fed00d0a51",
-            "618a431df1eb8e24b8741deb",
-            1,
-            {
-                UnlimitedCount: true,
-                StackObjectsCount: 9999999
-            },
-            [
-                {
-                    "count": 23544,
-                    "_tpl": "5449016a4bdc2d6f028b456f"
-                }
-            ]
-        );
+    private add_new_crafts_to_hideout() {
+        const hideoutEditor = new HideoutEditor();
+        const craftRecipes: IHideoutProduction[] = require("../db/craft_recipes.json");
 
-        praporTrader.add_item(
-            "684da564887de8fed00d0a52",
-            "617fd91e5539a84ec44ce155",
-            1,
-            {
-                UnlimitedCount: true,
-                StackObjectsCount: 9999999
-            },
-            [
-                {
-                    "count": 28787,
-                    "_tpl": "5449016a4bdc2d6f028b456f"
-                }
-            ]
-        );
+        for (const craftRecipe of craftRecipes) {
+            hideoutEditor.add_new_craft_recipe(craftRecipe);
+        }
     }
 
     public postSptLoad(container: DependencyContainer): void {

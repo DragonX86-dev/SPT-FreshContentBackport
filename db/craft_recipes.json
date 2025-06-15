@@ -1,0 +1,386 @@
+[
+  {
+    "_id": "67f4ebb7d0fb51b8c705e80e",
+    "areaType": 8,
+    "requirements": [
+      {
+        "areaType": 8,
+        "requiredLevel": 1,
+        "type": "Area"
+      },
+      {
+        "templateId": "5448fee04bdc2dbc018b4567",
+        "count": 1,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      }
+    ],
+    "productionTime": 1200,
+    "endProduct": "5448fee04bdc2dbc018b4567",
+    "isEncoded": false,
+    "locked": false,
+    "needFuelForAllProductionTime": false,
+    "continuous": false,
+    "count": 1,
+    "productionLimitCount": 0,
+    "isCodeProduction": false
+  },
+  {
+    "_id": "67f4ec521d41954d4f09a9c8",
+    "areaType": 8,
+    "requirements": [
+      {
+        "areaType": 8,
+        "requiredLevel": 2,
+        "type": "Area"
+      },
+      {
+        "templateId": "5448fee04bdc2dbc018b4567",
+        "count": 5,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "6389c6c7dbfd5e4b95197e68",
+        "count": 1,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      }
+    ],
+    "productionTime": 3600,
+    "endProduct": "5c0fa877d174af02a012e1cf",
+    "isEncoded": false,
+    "locked": false,
+    "needFuelForAllProductionTime": false,
+    "continuous": false,
+    "count": 5,
+    "productionLimitCount": 0,
+    "isCodeProduction": false
+  },
+  {
+    "_id": "67f4ec82690e0a541a021d3d",
+    "areaType": 8,
+    "requirements": [
+      {
+        "areaType": 8,
+        "requiredLevel": 2,
+        "type": "Area"
+      },
+      {
+        "templateId": "57513f9324597720a7128161",
+        "count": 1,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "5d1b39a386f774252339976f",
+        "type": "Tool"
+      }
+    ],
+    "productionTime": 1800,
+    "endProduct": "60098b1705871270cd5352a1",
+    "isEncoded": false,
+    "locked": false,
+    "needFuelForAllProductionTime": false,
+    "continuous": false,
+    "count": 2,
+    "productionLimitCount": 0,
+    "isCodeProduction": false
+  },
+  {
+    "_id": "67da01179cbeb8d6f4011961",
+    "areaType": 11,
+    "requirements": [
+      {
+        "areaType": 11,
+        "requiredLevel": 1,
+        "type": "Area"
+      },
+      {
+        "templateId": "590c2e1186f77425357b6124",
+        "type": "Tool"
+      },
+      {
+        "templateId": "5d4042a986f7743185265463",
+        "type": "Tool"
+      },
+      {
+        "templateId": "590a391c86f774385a33c404",
+        "count": 3,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "6389c70ca33d8c4cdf4932c6",
+        "count": 1,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "590a3b0486f7743954552bdb",
+        "count": 1,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      }
+    ],
+    "productionTime": 14400,
+    "endProduct": "61bf7c024770ee6f9c6b8b53",
+    "isEncoded": false,
+    "locked": false,
+    "needFuelForAllProductionTime": false,
+    "continuous": false,
+    "count": 1,
+    "productionLimitCount": 0,
+    "isCodeProduction": false
+  },
+  {
+    "_id": "67da000f1556838cf90d1716",
+    "areaType": 11,
+    "requirements": [
+      {
+        "areaType": 11,
+        "requiredLevel": 1,
+        "type": "Area"
+      },
+      {
+        "templateId": "590c2e1186f77425357b6124",
+        "type": "Tool"
+      },
+      {
+        "templateId": "5d4042a986f7743185265463",
+        "type": "Tool"
+      },
+      {
+        "templateId": "590a386e86f77429692b27ab",
+        "count": 3,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "590a391c86f774385a33c404",
+        "count": 2,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      }
+    ],
+    "productionTime": 10800,
+    "endProduct": "590c37d286f77443be3d7827",
+    "isEncoded": false,
+    "locked": false,
+    "needFuelForAllProductionTime": false,
+    "continuous": false,
+    "count": 1,
+    "productionLimitCount": 0,
+    "isCodeProduction": false
+  },
+  {
+    "_id": "67da02e9078f1947650d7bb8",
+    "areaType": 11,
+    "requirements": [
+      {
+        "areaType": 11,
+        "requiredLevel": 2,
+        "type": "Area"
+      },
+      {
+        "templateId": "5c052fb986f7746b2101e909",
+        "type": "Tool"
+      },
+      {
+        "templateId": "590c621186f774138d11ea29",
+        "count": 2,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "62a0a16d0b9d3c46de5b6e97",
+        "count": 1,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "5c12613b86f7743bbe2c3f76",
+        "count": 2,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "61bf7c024770ee6f9c6b8b53",
+        "count": 1,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      }
+    ],
+    "productionTime": 39600,
+    "endProduct": "6389c8c5dbfd5e4b95197e6b",
+    "isEncoded": false,
+    "locked": false,
+    "needFuelForAllProductionTime": false,
+    "continuous": false,
+    "count": 1,
+    "productionLimitCount": 0,
+    "isCodeProduction": false
+  },
+  {
+    "_id": "67da05c8078f1947650d7bb9",
+    "areaType": 11,
+    "requirements": [
+      {
+        "areaType": 11,
+        "requiredLevel": 3,
+        "type": "Area"
+      },
+      {
+        "templateId": "5c052fb986f7746b2101e909",
+        "type": "Tool"
+      },
+      {
+        "templateId": "5c94bbff86f7747ee735c08f",
+        "count": 10,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "6389c8c5dbfd5e4b95197e6b",
+        "count": 5,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "5c12613b86f7743bbe2c3f76",
+        "count": 3,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "62a0a16d0b9d3c46de5b6e97",
+        "count": 5,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "5c05308086f7746b2101e90b",
+        "count": 2,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      }
+    ],
+    "productionTime": 90000,
+    "endProduct": "5c1d0dc586f7744baf2e7b79",
+    "isEncoded": false,
+    "locked": false,
+    "needFuelForAllProductionTime": false,
+    "continuous": false,
+    "count": 1,
+    "productionLimitCount": 0,
+    "isCodeProduction": false
+  },
+  {
+    "_id": "67da04db9cbeb8d6f4011962",
+    "areaType": 11,
+    "requirements": [
+      {
+        "areaType": 11,
+        "requiredLevel": 3,
+        "type": "Area"
+      },
+      {
+        "templateId": "5c052fb986f7746b2101e909",
+        "type": "Tool"
+      },
+      {
+        "templateId": "5c94bbff86f7747ee735c08f",
+        "count": 10,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "6389c8c5dbfd5e4b95197e6b",
+        "count": 5,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "5c12613b86f7743bbe2c3f76",
+        "count": 3,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "5c05300686f7746dce784e5d",
+        "count": 3,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "5c05308086f7746b2101e90b",
+        "count": 2,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      },
+      {
+        "templateId": "61bf7c024770ee6f9c6b8b53",
+        "count": 4,
+        "isEncoded": false,
+        "isFunctional": false,
+        "isSpawnedInSession": false,
+        "type": "Item"
+      }
+    ],
+    "productionTime": 90000,
+    "endProduct": "5c1d0efb86f7744baf2e7b7b",
+    "isEncoded": false,
+    "locked": false,
+    "needFuelForAllProductionTime": false,
+    "continuous": false,
+    "count": 1,
+    "productionLimitCount": 0,
+    "isCodeProduction": false
+  }
+]

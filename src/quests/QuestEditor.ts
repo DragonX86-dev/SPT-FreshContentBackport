@@ -3,16 +3,6 @@ import {container} from "tsyringe";
 import {DatabaseService} from "@spt/services/DatabaseService";
 import {IQuest, IQuestCondition} from "@spt/models/eft/common/tables/IQuest";
 
-type EditQuestCounterCreatorConditionProps = {
-    conditionType: string;
-    conditionIndex: number;
-    counterConditionsIndex: number;
-    fieldType: "list" | "object" | "primitive";
-    fieldName: string;
-    objectFieldName: string;
-    newValue: any;
-};
-
 class QuestEditor {
     readonly quest: IQuest;
 
@@ -36,6 +26,5 @@ class QuestEditor {
 }
 
 export {
-    EditQuestCounterCreatorConditionProps,
     QuestEditor
 }
