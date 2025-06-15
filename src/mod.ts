@@ -62,7 +62,9 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
                 slotId: "hideout",
                 upd: {
                     UnlimitedCount: true,
-                    StackObjectsCount: 9999999
+                    StackObjectsCount: 9999999,
+                    BuyRestrictionMax: 2,
+                    BuyRestrictionCurrent: 0
                 }
             },
             barterScheme: [
