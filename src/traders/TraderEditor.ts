@@ -4,7 +4,7 @@ import {DatabaseServer} from "@spt/servers/DatabaseServer";
 import {ITrader} from "@spt/models/eft/common/tables/ITrader";
 import {ITraderItem} from "../interfaces/ITraderItem";
 
-export default class TraderEditor {
+export class TraderEditor {
     readonly trader: ITrader;
 
     constructor(traderId: string) {

@@ -8,7 +8,7 @@ import {IHideoutProduction} from "@spt/models/eft/hideout/IHideoutProduction";
 import {ItemCreater} from "./items/ItemCreater";
 import {QuestEditor} from "./quests/QuestEditor";
 import {HideoutEditor} from "./hideout/HideoutEditor";
-import TraderEditor from "./traders/TraderEditor";
+import {TraderEditor} from "./traders/TraderEditor";
 import {TraderEnum} from "./traders/TraderEnum";
 import {INewItem} from "./interfaces/INewItem";
 import {ITraderItem} from "./interfaces/ITraderItem";
@@ -46,12 +46,12 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
             locales: {
                 en: {
                     name: "F-1 hand grenade (Reduced delay)",
-                    shortName: "F-1",
+                    shortName: "F-1 RD",
                     description: "The F-1 hand grenade (GRAU Index 57-G-721) is an anti-personnel fragmentation grenade, designed for neutralizing enemy personnel in defensive combat. This version is personally modified by Partisan and has a shortened fuze, intended for explosive tripwires.",
                 },
                 ru: {
                     name: "Ручная граната Ф-1 с сокращенным замедлителем",
-                    shortName: "Ф-1СЗ",
+                    shortName: "Ф-1 СЗ",
                     description: "Ф-1 — ручная противопехотная граната. Эта версия модифицирована лично Партизаном и имеет сокращенный замедлитель. Предназначается для использования в растяжках.",
                 }
             }
