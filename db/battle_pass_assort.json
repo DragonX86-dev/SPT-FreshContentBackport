@@ -1,0 +1,368 @@
+[
+  {
+    "item": {
+      "_id": "6808b1a4c25caf3a4305d43c",
+      "_tpl": "67ab2f28dafe3b22670c9116",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "BuyRestrictionCurrent": 0,
+        "BuyRestrictionMax": 2,
+        "StackObjectsCount": 2530000,
+        "UnlimitedCount": true
+      }
+    },
+    "subItems": [
+      {
+        "_id": "6808b1a4c25caf3a4305d442",
+        "_tpl": "656f9d5900d62bcd2e02407c",
+        "parentId": "6808b1a4c25caf3a4305d43c",
+        "slotId": "Front_plate"
+      },
+      {
+        "_id": "6808b1a4c25caf3a4305d443",
+        "_tpl": "656f9d5900d62bcd2e02407c",
+        "parentId": "6808b1a4c25caf3a4305d43c",
+        "slotId": "Back_plate"
+      },
+      {
+        "_id": "68443f5a3c97a85aa6a3b088",
+        "_tpl": "65704de13e7bba58ea0285c8",
+        "parentId": "6808b1a4c25caf3a4305d43c",
+        "slotId": "Soft_armor_front"
+      },
+      {
+        "_id": "68443f5a460b5f42e2e1134c",
+        "_tpl": "65705c3c14f2ed6d7d0b7738",
+        "parentId": "6808b1a4c25caf3a4305d43c",
+        "slotId": "Soft_armor_back"
+      },
+      {
+        "_id": "68443f5a33c73db4e5c355f5",
+        "_tpl": "65705c777260e1139e091408",
+        "parentId": "6808b1a4c25caf3a4305d43c",
+        "slotId": "Soft_armor_left"
+      },
+      {
+        "_id": "68443f5a75abca920288b0fa",
+        "_tpl": "65705cb314f2ed6d7d0b773c",
+        "parentId": "6808b1a4c25caf3a4305d43c",
+        "slotId": "soft_armor_right"
+      },
+      {
+        "_id": "68443f5a5b1b43ab7f6f265f",
+        "_tpl": "65705cea4916448ae1050897",
+        "parentId": "6808b1a4c25caf3a4305d43c",
+        "slotId": "Collar"
+      }
+    ],
+    "barterScheme": [
+      {
+        "_tpl": "5d235b4d86f7742e017bc88a",
+        "count": 7
+      }
+    ],
+    "loyaltyLevel": 1
+  },
+  {
+    "item": {
+      "_id": "6808b1a6c25caf3a4305d587",
+      "_tpl": "67ab2eecfe82855dcc0f2af6",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "BuyRestrictionCurrent": 0,
+        "BuyRestrictionMax": 2,
+        "StackObjectsCount": 2530000,
+        "UnlimitedCount": true
+      }
+    },
+    "subItems": [
+      {
+        "_id": "6808b1a6c25caf3a4305d588",
+        "_tpl": "656fae5f7c2d57afe200c0d7",
+        "parentId": "6808b1a6c25caf3a4305d587",
+        "slotId": "Front_plate"
+      },
+      {
+        "_id": "6808b1a6c25caf3a4305d589",
+        "_tpl": "656fae5f7c2d57afe200c0d7",
+        "parentId": "6808b1a6c25caf3a4305d587",
+        "slotId": "Back_plate"
+      }
+    ],
+    "barterScheme": [
+      {
+        "_tpl": "5d235b4d86f7742e017bc88a",
+        "count": 34
+      }
+    ],
+    "loyaltyLevel": 4
+  },
+  {
+    "item": {
+      "_id": "6808b1a5c25caf3a4305d53a",
+      "_tpl": "67ab3f146d7ece17bf0096ff",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "BuyRestrictionCurrent": 0,
+        "BuyRestrictionMax": 2,
+        "StackObjectsCount": 2535000,
+        "UnlimitedCount": true
+      }
+    },
+    "barterScheme": [
+      {
+        "_tpl": "5d235b4d86f7742e017bc88a",
+        "count": 8
+      }
+    ],
+    "loyaltyLevel": 2
+  },
+  {
+    "item": {
+      "_id": "6808b1a5c25caf3a4305d532",
+      "_tpl": "67ab2f94dafe3b22670c912c",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "BuyRestrictionCurrent": 0,
+        "BuyRestrictionMax": 2,
+        "StackObjectsCount": 2530000,
+        "UnlimitedCount": true
+      }
+    },
+    "subItems": [
+      {
+        "_id": "6808b1a5c25caf3a4305d535",
+        "_tpl": "656fad8c498d1b7e3e071da0",
+        "parentId": "6808b1a5c25caf3a4305d532",
+        "slotId": "Front_plate"
+      },
+      {
+        "_id": "6808b1a5c25caf3a4305d536",
+        "_tpl": "656fad8c498d1b7e3e071da0",
+        "parentId": "6808b1a5c25caf3a4305d532",
+        "slotId": "Back_plate"
+      },
+      {
+        "_id": "68443f5a105b07028342318e",
+        "_tpl": "6570e025615f54368b04fcb0",
+        "parentId": "6808b1a5c25caf3a4305d532",
+        "slotId": "Soft_armor_front"
+      },
+      {
+        "_id": "68443f5a43a3bce0ac18efa8",
+        "_tpl": "6570e0610b57c03ec90b96ef",
+        "parentId": "6808b1a5c25caf3a4305d532",
+        "slotId": "Soft_armor_back"
+      }
+    ],
+    "barterScheme": [
+      {
+        "_tpl": "5d235b4d86f7742e017bc88a",
+        "count": 18
+      }
+    ],
+    "loyaltyLevel": 3
+  },
+  {
+    "item": {
+      "_id": "6808b1a6c25caf3a4305d58c",
+      "_tpl": "67ab49aab9c7a1e18c095686",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "BuyRestrictionCurrent": 0,
+        "BuyRestrictionMax": 2,
+        "StackObjectsCount": 2530000,
+        "UnlimitedCount": true
+      }
+    },
+    "subItems": [
+      {
+        "_id": "6808b1a6c25caf3a4305d590",
+        "_tpl": "656f9fa0498d1b7e3e071d98",
+        "parentId": "6808b1a6c25caf3a4305d58c",
+        "slotId": "Front_plate"
+      },
+      {
+        "_id": "6808b1a6c25caf3a4305d591",
+        "_tpl": "656f9fa0498d1b7e3e071d98",
+        "parentId": "6808b1a6c25caf3a4305d58c",
+        "slotId": "Back_plate"
+      },
+      {
+        "_id": "68443f5a002c9d8d5bdc97f9",
+        "_tpl": "6570e83223c1f638ef0b0ede",
+        "parentId": "6808b1a6c25caf3a4305d58c",
+        "slotId": "Soft_armor_front"
+      },
+      {
+        "_id": "68443f5ac430343763e1ff97",
+        "_tpl": "6570e87c23c1f638ef0b0ee2",
+        "parentId": "6808b1a6c25caf3a4305d58c",
+        "slotId": "Soft_armor_back"
+      },
+      {
+        "_id": "68443f5a8a2e2874f4cca6ac",
+        "_tpl": "6570e90b3a5689d85f08db97",
+        "parentId": "6808b1a6c25caf3a4305d58c",
+        "slotId": "Groin"
+      }
+    ],
+    "barterScheme": [
+      {
+        "_tpl": "5d235b4d86f7742e017bc88a",
+        "count": 26
+      }
+    ],
+    "loyaltyLevel": 3
+  },
+  {
+    "item": {
+      "_id": "6808b1a3c25caf3a4305d3c8",
+      "_tpl": "67ab3ea96d7ece17bf0096f6",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "BuyRestrictionCurrent": 0,
+        "BuyRestrictionMax": 2,
+        "StackObjectsCount": 2535000,
+        "UnlimitedCount": true
+      }
+    },
+    "barterScheme": [
+      {
+        "_tpl": "5d235b4d86f7742e017bc88a",
+        "count": 10
+      }
+    ],
+    "loyaltyLevel": 3
+  },
+  {
+    "item": {
+      "_id": "6808b1a3c25caf3a4305d326",
+      "_tpl": "67ab4b2d6f7ae4aa550bbcf6",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "BuyRestrictionCurrent": 0,
+        "BuyRestrictionMax": 2,
+        "StackObjectsCount": 2530000,
+        "UnlimitedCount": true
+      }
+    },
+    "subItems": [
+      {
+        "_id": "6808b1a3c25caf3a4305d329",
+        "_tpl": "656fae5f7c2d57afe200c0d7",
+        "parentId": "6808b1a3c25caf3a4305d326",
+        "slotId": "Front_plate"
+      },
+      {
+        "_id": "6808b1a3c25caf3a4305d32a",
+        "_tpl": "656fae5f7c2d57afe200c0d7",
+        "parentId": "6808b1a3c25caf3a4305d326",
+        "slotId": "Back_plate"
+      },
+      {
+        "_id": "68443f5a614bfd290f63dcbe",
+        "_tpl": "6575bc88c6700bd6b40e8a57",
+        "parentId": "6808b1a3c25caf3a4305d326",
+        "slotId": "Soft_armor_front"
+      },
+      {
+        "_id": "68443f5a43515340e25e5e75",
+        "_tpl": "6575bca0dc9932aed601c5d7",
+        "parentId": "6808b1a3c25caf3a4305d326",
+        "slotId": "Soft_armor_back"
+      }
+    ],
+    "barterScheme": [
+      {
+        "_tpl": "5d235b4d86f7742e017bc88a",
+        "count": 38
+      }
+    ],
+    "loyaltyLevel": 4
+  },
+  {
+    "item": {
+      "_id": "6808b1a2c25caf3a4305d2b8",
+      "_tpl": "67ab2f5adafe3b22670c911f",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "BuyRestrictionCurrent": 0,
+        "BuyRestrictionMax": 2,
+        "StackObjectsCount": 2530000,
+        "UnlimitedCount": true
+      }
+    },
+    "subItems": [
+      {
+        "_id": "6808b1a2c25caf3a4305d2c0",
+        "_tpl": "65573fa5655447403702a816",
+        "parentId": "6808b1a2c25caf3a4305d2b8",
+        "slotId": "Front_plate"
+      },
+      {
+        "_id": "6808b1a2c25caf3a4305d2c1",
+        "_tpl": "65573fa5655447403702a816",
+        "parentId": "6808b1a2c25caf3a4305d2b8",
+        "slotId": "Back_plate"
+      },
+      {
+        "_id": "68443f5ae1877f5ca4edd3b0",
+        "_tpl": "6575dd3e9e27f4a85e081142",
+        "parentId": "6808b1a2c25caf3a4305d2b8",
+        "slotId": "Soft_armor_front"
+      },
+      {
+        "_id": "68443f5a23422b5e71856440",
+        "_tpl": "6575dd519e27f4a85e081146",
+        "parentId": "6808b1a2c25caf3a4305d2b8",
+        "slotId": "Soft_armor_back"
+      },
+      {
+        "_id": "68443f5ab6ed311310425dab",
+        "_tpl": "6575dd64945bf78edd04c438",
+        "parentId": "6808b1a2c25caf3a4305d2b8",
+        "slotId": "Soft_armor_left"
+      },
+      {
+        "_id": "68443f5a77c1ee0ffd5811d2",
+        "_tpl": "6575dd6e9d3a0ddf660b9047",
+        "parentId": "6808b1a2c25caf3a4305d2b8",
+        "slotId": "soft_armor_right"
+      },
+      {
+        "_id": "68443f5aa4b6963a64ac603a",
+        "_tpl": "6575dd769d3a0ddf660b904b",
+        "parentId": "6808b1a2c25caf3a4305d2b8",
+        "slotId": "Collar"
+      },
+      {
+        "_id": "68443f5a95c9a2b6073ebdec",
+        "_tpl": "6575dd800546f8b1de093df6",
+        "parentId": "6808b1a2c25caf3a4305d2b8",
+        "slotId": "Groin"
+      },
+      {
+        "_id": "68443f5accc5cfbdb8da89f9",
+        "_tpl": "6575dd94945bf78edd04c43c",
+        "parentId": "6808b1a2c25caf3a4305d2b8",
+        "slotId": "Groin_back"
+      }
+    ],
+    "barterScheme": [
+      {
+        "_tpl": "5d235b4d86f7742e017bc88a",
+        "count": 42
+      }
+    ],
+    "loyaltyLevel": 4
+  }
+]

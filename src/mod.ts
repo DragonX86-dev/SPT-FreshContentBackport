@@ -3,14 +3,15 @@ import {DependencyContainer} from "tsyringe";
 import {ItemTpl} from "@spt/models/enums/ItemTpl";
 import {IPostDBLoadMod} from "@spt/models/external/IPostDBLoadMod";
 import {IPostSptLoadMod} from "@spt/models/external/IPostSptLoadMod";
+import {IHideoutProduction} from "@spt/models/eft/hideout/IHideoutProduction";
 
 import {ItemCreater} from "./items/ItemCreater";
 import {QuestEditor} from "./quests/QuestEditor";
 import {HideoutEditor} from "./hideout/HideoutEditor";
-import {IHideoutProduction} from "@spt/models/eft/hideout/IHideoutProduction";
 import TraderEditor from "./traders/TraderEditor";
-import {ITraderItem} from "./interfaces/ITraderItem";
 import {TraderEnum} from "./traders/TraderEnum";
+import {INewItem} from "./interfaces/INewItem";
+import {ITraderItem} from "./interfaces/ITraderItem";
 
 
 class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
@@ -21,10 +22,12 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
     }
 
     public postDBLoad(container: DependencyContainer): void {
-        this.add_f1_with_reduced_delay();
-        this.add_keys_case();
-        this.add_rgo_rgn_vog25_grenades_to_prapor_assort();
         this.add_new_crafts_to_hideout();
+        this.add_f1_with_reduced_delay();
+        this.add_battle_pass_items_to_database();
+        this.add_battle_pass_items_to_ref_assortment();
+        this.add_gp_coin_to_ref_assortment();
+        this.add_keys_case();
     }
 
     private add_f1_with_reduced_delay() {
@@ -229,13 +232,45 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
         });
     }
 
-    private add_rgo_rgn_vog25_grenades_to_prapor_assort() {
-        const praporTrader = new TraderEditor(TraderEnum.Prapor);
-        const traderItems: ITraderItem[] = require("../db/trader_items.json");
+    private add_battle_pass_items_to_database() {
+        const newBattlePassItems: INewItem[] = require("../db/battle_pass_items.json");
 
-        for (const traderItem of traderItems) {
-            praporTrader.add_item_to_assortment(traderItem);
+        for (const battlePassItem of newBattlePassItems) {
+            this.itemCreater.create_item(battlePassItem);
         }
+    }
+
+    private add_battle_pass_items_to_ref_assortment() {
+        const refTrader = new TraderEditor(TraderEnum.Ref);
+        const battlePassAssorts: ITraderItem[] = require("../db/battle_pass_assort.json");
+
+        for (const battlePassItem of battlePassAssorts) {
+            refTrader.add_item_to_assortment(battlePassItem);
+        }
+    }
+
+    private add_gp_coin_to_ref_assortment() {
+        const refTrader = new TraderEditor(TraderEnum.Ref);
+
+        refTrader.add_item_to_assortment({
+            item: {
+                _id: "686007e2c1153990581f378e",
+                _tpl: "5d235b4d86f7742e017bc88a",
+                parentId: "hideout",
+                slotId: "hideout",
+                upd: {
+                    UnlimitedCount: true,
+                    StackObjectsCount: 9999999
+                }
+            },
+            barterScheme: [
+                {
+                    "count": 7500,
+                    "_tpl": "5449016a4bdc2d6f028b456f"
+                }
+            ],
+            loyaltyLevel: 1
+        });
     }
 
     private add_new_crafts_to_hideout() {

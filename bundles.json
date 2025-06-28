@@ -3,6 +3,38 @@
     {
       "key": "assets/content/items/barter/item_container_keys_case/item_container_keys_case.bundle",
       "dependencyKeys": []
+    },
+    {
+      "key": "assets/content/items/equipment/armor_kirasa/item_equipment_armor_kirasa_arena_bp_01.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "assets/content/items/equipment/armor_hexatac/item_equipment_armor_hexatac_arena_bp_01.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "assets/content/items/equipment/rig_blackrock/item_equipment_rig_blackrock_arena_bp_01.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "assets/content/items/equipment/armor_trooper/item_equipment_armor_trooper_arena_bp_01.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "assets/content/items/equipment/rig_cryeavs/item_equipment_rig_cryeavs_arena_bp_01.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "assets/content/items/equipment/rig_alpha/item_equipment_rig_alpha_arena_bp_01.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "assets/content/items/equipment/rig_carriertactec/item_equipment_rig_carriertactec_arena_bp_01.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "assets/content/items/equipment/armor_redut_m/item_equipment_armor_redut_m_arena_bp_01.bundle",
+      "dependencyKeys": []
     }
   ]
 }

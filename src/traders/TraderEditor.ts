@@ -16,6 +16,13 @@ export default class TraderEditor {
 
     public add_item_to_assortment(traderItem: ITraderItem): void {
         this.trader.assort.items.push(traderItem.item);
+
+        if (traderItem.subItems !== undefined) {
+            for (const subItem of traderItem.subItems) {
+                this.trader.assort.items.push(subItem);
+            }
+        }
+
         this.trader.assort.loyal_level_items[traderItem.item._id] = traderItem.loyaltyLevel;
         this.trader.assort.barter_scheme[traderItem.item._id] = [traderItem.barterScheme];
     }

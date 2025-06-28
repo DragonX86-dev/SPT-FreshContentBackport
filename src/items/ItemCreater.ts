@@ -4,6 +4,7 @@ import {ItemTpl} from "@spt/models/enums/ItemTpl";
 import {IProps} from "@spt/models/eft/common/tables/ITemplateItem";
 import {CustomItemService} from "@spt/services/mod/CustomItemService";
 import {LocaleDetails, NewItemFromCloneDetails} from "@spt/models/spt/mod/NewItemDetails";
+import {INewItem} from "../interfaces/INewItem";
 
 type CreateItemFromCloneProps = {
     itemId: string;
@@ -33,6 +34,24 @@ class ItemCreater {
         let createdItem = customItem.createItemFromClone(newItem);
         if (!createdItem.success) {
             console.log("");
+        }
+
+        return createdItem.itemId;
+    }
+
+    public create_item(newItem: INewItem): string {
+        const customItem = container.resolve<CustomItemService>("CustomItemService");
+
+        let createdItem = customItem.createItem({
+            newItem: newItem.newItem,
+            fleaPriceRoubles: newItem.handbookPrice,
+            handbookPriceRoubles: newItem.handbookPrice,
+            handbookParentId: newItem.handbookParentId,
+            locales: newItem.locales
+        });
+
+        if (!createdItem.success) {
+            console.log(createdItem.errors);
         }
 
         return createdItem.itemId;
