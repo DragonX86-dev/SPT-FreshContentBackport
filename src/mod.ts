@@ -9,9 +9,9 @@ import {ItemCreater} from "./items/ItemCreater";
 import {QuestEditor} from "./quests/QuestEditor";
 import {HideoutEditor} from "./hideout/HideoutEditor";
 import {TraderEditor} from "./traders/TraderEditor";
-import {TraderEnum} from "./traders/TraderEnum";
 import {INewItem} from "./interfaces/INewItem";
 import {ITraderItem} from "./interfaces/ITraderItem";
+import {Traders} from "@spt/models/enums/Traders";
 
 
 class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
@@ -31,7 +31,7 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
     }
 
     private add_f1_with_reduced_delay() {
-        const jaegerTrader = new TraderEditor(TraderEnum.Jaeger);
+        const jaegerTrader = new TraderEditor(Traders.JAEGER);
         const grenadierQuest = new QuestEditor("5c0d190cd09282029f5390d8");
 
         const f1WithReducedDelayId = this.itemCreater.create_item_from_clone({
@@ -91,8 +91,8 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
     }
 
     private add_keys_case() {
-        const refTrader = new TraderEditor(TraderEnum.Ref);
-        const therapistTrader = new TraderEditor(TraderEnum.Therapist);
+        const refTrader = new TraderEditor(Traders.REF);
+        const therapistTrader = new TraderEditor(Traders.THERAPIST);
 
         const keysCaseId = this.itemCreater.create_item_from_clone({
             itemId: "67d3ed3271c17ff82e0a5b0b",
@@ -241,7 +241,7 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
     }
 
     private add_battle_pass_items_to_ref_assortment() {
-        const refTrader = new TraderEditor(TraderEnum.Ref);
+        const refTrader = new TraderEditor(Traders.REF);
         const battlePassAssorts: ITraderItem[] = require("../db/battle_pass_assort.json");
 
         for (const battlePassItem of battlePassAssorts) {
@@ -250,7 +250,7 @@ class FreshContentBackport implements IPostDBLoadMod, IPostSptLoadMod {
     }
 
     private add_gp_coin_to_ref_assortment() {
-        const refTrader = new TraderEditor(TraderEnum.Ref);
+        const refTrader = new TraderEditor(Traders.REF);
 
         refTrader.add_item_to_assortment({
             item: {
