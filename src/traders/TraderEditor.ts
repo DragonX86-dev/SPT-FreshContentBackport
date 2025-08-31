@@ -14,6 +14,10 @@ export class TraderEditor {
             .traders[traderId];
     }
 
+    public add_item_to_quest_assort(itemId: string, questId: string): void {
+        this.trader.questassort.success[itemId] = questId;
+    }
+
     public add_item_to_assortment(traderItem: ITraderItem): void {
         this.trader.assort.items.push(traderItem.item);
 

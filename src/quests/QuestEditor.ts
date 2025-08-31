@@ -2,6 +2,7 @@ import {container} from "tsyringe";
 
 import {DatabaseService} from "@spt/services/DatabaseService";
 import {IQuest, IQuestCondition} from "@spt/models/eft/common/tables/IQuest";
+import {IReward} from "@spt/models/eft/common/tables/IReward";
 
 class QuestEditor {
     readonly quest: IQuest;
@@ -10,6 +11,10 @@ class QuestEditor {
         this.quest = container
             .resolve<DatabaseService>("DatabaseService")
             .getTables().templates.quests[questId];
+    }
+
+    public edit_success_rewards(reward: IReward) {
+        this.quest.rewards.Success.push(reward);
     }
 
     public edit_quest_counter_creator_condition(type: string, index: number, counterIndex: number, fieldName: string, modifier: (field: any) => void): void {
